@@ -43,24 +43,24 @@ export default function ProductScreen(props) {
                             </div>
                         </li>
                         <li>
-                            <div className="row">
-                                <div>Status</div>
-                                <div>
-                                    {product.countInStock > 0 ? (
-                                    <span className="success"> in Stock</span>
-                                    ) : (
-                                    <span className="danger">Unavailable</span>
-                                    )}
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <button className="primary block">Add to Cart</button>
-                        </li>
-                    </ul>
+                        <div className="row">
+                  <div>Status</div>
+                  <div>
+                    {product.countInStock > 0 ? (
+                      <span className="success">In Stock</span>
+                    ) : (
+                      <span className="error">Unavailable</span>
+                    )}
+                  </div>
                 </div>
-            </div>
+              </li>
+              <li>
+                <button className="primary block">Add to Cart</button>
+              </li>
+            </ul>
           </div>
-         </div>
-    );
+        </div>
+      </div>
+    </div>
+  );
 }
