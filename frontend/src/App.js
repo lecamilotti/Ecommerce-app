@@ -15,7 +15,7 @@ function App() {
         <header className="row">
           <div>
             <Link className="brand" to="/">
-              amazona
+              EGPU Dock Station
             </Link>
           </div>
           <div>
