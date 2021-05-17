@@ -8,7 +8,7 @@ const userRouter = express.Router();
 userRouter.get(
     '/seed',
      expressAsyncHandler(async (req, res) => {
-         await User.remove({});
+        // await User.remove({}); this code removes all users from your data base be very carefull to use it.
     const createdUsers = await User.insertMany(data.users);
     res.send({ createdUsers });
   })
