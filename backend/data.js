@@ -17,8 +17,7 @@ const data = {
     ],
     products: [
         {
-            _id:'1',
-            name: 'Dock Station',
+            name: 'azinha',
             category:'Dock',
             image: '/image/dock.png',
             price: 1290,
@@ -29,8 +28,8 @@ const data = {
             description: 'high quality product',
         },
         {
-            _id:'2',
-            name:'cable',
+            
+            name:'Laptop',
             category:'Cables',
             image: '/image/cable.png',
             price: 190,
@@ -41,8 +40,8 @@ const data = {
             description: 'high quality product',
         },
         {
-            _id:'3',
-            name:'Dock Station',
+            
+            name:'Station',
             category:'Dock',
             image: '/image/cable.png',
             price: 390,
@@ -53,8 +52,8 @@ const data = {
             description: 'high quality product',
         },
         {
-            _id:'4',
-            name:'Dock Station',
+            
+            name:'Placa mãe',
             category:'Dock',
             image: '/image/dock.png',
             price: 390,
@@ -65,7 +64,7 @@ const data = {
             description: 'high quality product',
         },
         {
-            _id:'5',
+            
             name:'Power Supply',
             category:'Acessories',
             image: '/image/cable.png',
@@ -77,8 +76,8 @@ const data = {
             description: 'high quality product',
         },
         {
-            _id:'6',
-            name:'Dock Station',
+           
+            name:'video card',
             category:'Dock',
             image: '/image/dock.png',
             price: 390,
