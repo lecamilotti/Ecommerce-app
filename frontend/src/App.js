@@ -1,15 +1,15 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { BrowserRouter, Link, Route } from 'react-router-dom';
-import { signout } from './actions/userActions';
-import CartScreen from './screens/CartScreen';
-import HomeScreen from './screens/HomeScreen';
-import PaymentMethodScreen from './screens/PaymentMethodScreen';
-import PlaceOrderScreen from './screens/PlaceOrderScreen';
-import ProductScreen from './screens/ProductScreen';
-import RegisterScreen from './screens/RegisterScreen';
-import ShippingAddressScreen from './screens/ShippingAddressScreen';
-import SigninScreen from './screens/SigninScreen';
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { BrowserRouter, Link, Route } from "react-router-dom";
+import { signout } from "./actions/userActions";
+import CartScreen from "./screens/CartScreen";
+import HomeScreen from "./screens/HomeScreen";
+import PaymentMethodScreen from "./screens/PaymentMethodScreen";
+import PlaceOrderScreen from "./screens/PlaceOrderScreen";
+import ProductScreen from "./screens/ProductScreen";
+import RegisterScreen from "./screens/RegisterScreen";
+import ShippingAddressScreen from "./screens/ShippingAddressScreen";
+import SigninScreen from "./screens/SigninScreen";
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -26,7 +26,11 @@ function App() {
         <header className="row">
           <div>
             <Link className="brand" to="/">
-              My First Store
+              <img
+                className="header__logo"
+                src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+                alt=""
+              />
             </Link>
           </div>
           <div>
@@ -39,7 +43,7 @@ function App() {
             {userInfo ? (
               <div className="dropdown">
                 <Link to="#">
-                  {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
+                  {userInfo.name} <i className="fa fa-caret-down"></i>{" "}
                 </Link>
                 <ul className="dropdown-content">
                   <li>
@@ -64,7 +68,9 @@ function App() {
           <Route path="/placeorder" component={PlaceOrderScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
-        <footer className="row center">All right reserved Leandro Camilotti Web Developer Junior</footer>
+        <footer className="row center">
+          All right reserved Leandro Camilotti Web Developer Junior
+        </footer>
       </div>
     </BrowserRouter>
   );
