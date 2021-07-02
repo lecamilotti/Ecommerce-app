@@ -20,9 +20,12 @@ export default function Product(props) {
         <div className="row">
           <div className="price">${product.price}</div>
           <div>
+            {/*
+            I need to fix this bug and I can´t find the error
             <Link to={`/seller/${product.seller._id}`}>
               {product.seller.name}
             </Link>
+            */}
           </div>
         </div>
       </div>
