@@ -61,7 +61,7 @@ function App() {
               <i className="fa fa-bars"></i>
             </button>
             <Link className="brand" to="/">
-              amazona
+              Meu Website
             </Link>
           </div>
           <div>
@@ -234,7 +234,9 @@ function App() {
 
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
-        <footer className="row center">All right reserved</footer>
+        <footer className="row center">
+          All right reserved Leandro Camilotti a Web developer
+        </footer>
       </div>
     </BrowserRouter>
   );
