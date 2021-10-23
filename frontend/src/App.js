@@ -61,7 +61,7 @@ function App() {
               <i className="fa fa-bars"></i>
             </button>
             <Link className="brand" to="/">
-              Meu Website
+              My E-Commerce
             </Link>
           </div>
           <div>
@@ -138,6 +138,7 @@ function App() {
             )}
           </div>
         </header>
+
         <aside className={sidebarIsOpen ? "open" : ""}>
           <ul className="categories">
             <li>
@@ -235,7 +236,7 @@ function App() {
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
         <footer className="row center">
-          All right reserved Leandro Camilotti a Web developer
+          All right reserved Leandro Camilotti FullStack developer
         </footer>
       </div>
     </BrowserRouter>
